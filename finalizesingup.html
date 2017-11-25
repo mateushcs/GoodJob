@@ -35,15 +35,21 @@
 
 					<article class = "pb-signupbox" id = "singup">
 
-						<h1> Iniciar Sessão </h1>
+						<h1> Só mais um pouquinho... </h1>
+
+						<h2> Seu registro está quase completo. Só precisamos de mais algumas informações! </h2>
 
 						<form class = "pb-sb-form">
 
-							<input name = "email" class = "ps-sc-sb-textinput" type = "text" maxlength = "40" placeholder = "Email" required>
+							<input name = "email" class = "ps-sc-sb-textinput" type = "text" maxlength = "40" placeholder = "Email (utilizado para acessar)" required>
 
-							<input name = "password" class = "ps-sc-sb-textinput" type = "password" maxlength = "25" placeholder = "Senha" required>
+							<input name = "password" class = "ps-sc-sb-textinput" type = "password" maxlength = "25" placeholder = "Senha (utilizado para acessar)" required>
 
-							<button class = "pb-sb-f-button"> Entrar </button>
+							<input name = "localization" class = "ps-sc-sb-textinput" type = "text" maxlength = "40" placeholder = "Localização" required>
+
+							<input name = "representant" class = "ps-sc-sb-textinput" type = "text" maxlength = "25" placeholder = "Nome do Representante" required>
+
+							<button class = "pb-sb-f-button" formaction = "emailconfirmation.html"> Cadastrar </button>
 
 						</form>
 
