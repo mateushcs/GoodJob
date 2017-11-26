@@ -1,0 +1,517 @@
+/* RESET */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+
+:focus {
+	outline: 0;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+
+blockquote, q {
+	quotes: "" "";
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+/* imports */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800');
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800');
+
+/* default settings */
+
+@viewport{
+	zoom: 1.0;
+	width: device-width;
+}
+
+.wrapper {
+	width: 100vw;
+	max-width: 100%;
+	margin: 0;
+}
+
+body {
+	background-color: #f4f6f4;
+}
+
+section.primary-box {
+	background: rgba(255,53,111,0.88);
+	height: 100vh;
+}
+
+.fix {
+	margin-top: 11vh;
+}
+
+.fix2 {
+	padding-top: 11vh !important;
+}
+
+/* typography */
+
+nav .pn-title {
+	text-transform: uppercase;
+	font: 1.2em poppins;
+	font-weight: 600;
+	color: #f4f6f4;
+	text-align: center;
+	flex: 0 0 100%;
+}
+
+nav .pn-nav a {
+	text-transform: uppercase;
+	font: 1.0em poppins;
+	color: #e4e6e4;
+	transition: 0.75s;
+}
+
+nav .pn-nav a:hover {
+	font: 1.15em poppins;
+}
+
+nav .pn-n-hover {
+	font: 1.15em poppins !important;
+	font-weight: 600 !important;
+}
+
+section.introduction h1 {
+	text-transform: uppercase;
+	font: 1.5em poppins;
+	font-weight: 600;
+	color: #646664;
+	margin: 15px 0 10px 0;
+	text-align: center;
+
+}
+
+section.introduction {
+	font: 1.1em raleway;
+	color: #646664;
+	text-align: justify;
+	line-height: 1.7;
+}
+
+section.primary-content .a-description {
+	font: 1.1em raleway;
+	color: #646664;
+	text-align: justify;
+	display: block;
+	line-height: 1.7;
+}
+
+section.primary-content h1 {
+	text-transform: uppercase;
+	font: 1.6em poppins;
+	font-weight: 600;
+	color: #e72b65;
+	margin: 8vh 0 10px 0;
+	text-align: center;
+}
+
+section.primary-content h2 {
+	font: 1.2em poppins;
+	font-weight: 300;
+	color: #e72b65;
+	margin: 7px 0 5px 0;
+}
+
+section.primary-content h3 {
+	font: 1.2em poppins;
+	font-weight: 300;
+	color: #646664;
+	font-style: oblique;
+	text-align: center;
+}
+
+section.secundary-content .pc-text {
+	font: 1.1em raleway;
+	color: #646664;
+}
+
+section.secundary-content .b {
+	color: #00a3a8;
+	font-weight: 700;
+}
+
+section.secundary-content .i {
+	color: #00a3a8;
+	font-style: oblique;
+
+}
+
+section.secundary-content h1 {
+	text-transform: uppercase;
+	font: 1.6em poppins;
+	font-weight: 600;
+	color: #00a3a8;
+	margin: 8vh 0 10px 0;
+	text-align: center;
+}
+
+section.secundary-content h2 {
+	font: 1.2em poppins;
+	font-weight: 500;
+	color: #00a3a8;
+	margin: 7px 0 5px 0;
+}
+
+section.secundary-content h3 {
+	font: 1.2em poppins;
+	font-weight: 300;
+	color: #00a3a8;
+	font-style: oblique;
+	text-align: center;
+}
+
+section.tertiary-content .pc-text {
+	font: 1.1em raleway;
+	color: #646664;
+}
+
+section.tertiary-content .b {
+	color: #2eae7c;
+	font-weight: 700;
+}
+
+section.tertiary-content .i {
+	color: #2eae7c;
+	font-style: oblique;
+
+}
+
+section.tertiary-content h1 {
+	text-transform: uppercase;
+	font: 1.6em poppins;
+	font-weight: 600;
+	color: #2eae7c;
+	margin: 8vh 0 10px 0;
+	text-align: center;
+}
+
+section.tertiary-content h2 {
+	font: 1.2em poppins;
+	font-weight: 500;
+	color: #2eae7c;
+	margin: 7px 0 5px 0;
+}
+
+section.tertiary-content h3 {
+	font: 1.2em poppins;
+	font-weight: 300;
+	color: #2eae7c;
+	font-style: oblique;
+	text-align: center;
+}
+
+section.quaternary-content .pc-text {
+	font: 1.1em raleway;
+	color: #646664;
+}
+
+section.quaternary-content .b {
+	color: #4d3450;
+	font-weight: 700;
+}
+
+section.quaternary-content .i {
+		color: #4d3450;
+	font-style: oblique;
+
+}
+
+section.quaternary-content h1 {
+	text-transform: uppercase;
+	font: 1.6em poppins;
+	font-weight: 600;
+	color: #4d3450;
+	margin: 8vh 0 10px 0;
+	text-align: center;
+}
+
+section.quaternary-content h2 {
+	font: 1.2em poppins;
+	font-weight: 500;
+	color: #4d3450;
+	margin: 7px 0 5px 0;
+}
+
+section.quaternary-content h3 {
+	font: 1.2em poppins;
+	font-weight: 300;
+	color: #4d3450;
+	font-style: oblique;
+	text-align: center;
+}
+
+footer.footer ul h4 {
+	text-transform: uppercase;
+	font: 1.1em poppins;
+	font-weight: 600;
+	color: #f4f6f4;
+	margin-bottom: 5px;
+}
+
+footer.footer ul li {
+	font: 0.81em raleway;
+	color: #e4e6e4;
+	margin-bottom: 12px;
+	transition: 0.75s;
+}
+
+footer.footer ul li:hover {
+	transform: scale(1.2);
+}
+
+footer .f-description {
+	text-transform: uppercase;
+	font: 0.9em poppins;
+	color: #f4f6f4;
+	margin-top: 30px;
+	flex: 0 0 100%;
+}
+
+/* header */
+
+header.header {
+	height: 8vh;
+	padding: 4vh 0 0 0;
+	display: flex;
+	justify-content: center;
+	background-color: #e72b65;
+}
+
+header .logo {
+	width: auto;
+	height: 8vh;
+}
+
+/* Primary-nav */
+
+nav.primary-nav {
+	height: 10vh;
+	width: 100%;
+	padding: 4.5vh 0 4.5vh 0;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	background-color: #e72b65;
+	transition: 0.75s;
+}
+
+nav.pn-fixed {
+	position: sticky;
+	top: 0;
+	left: 0;
+}
+
+.pn-blue {
+	background-color: #00a3a8 !important;
+}
+
+.pn-green {
+	background-color: #2eae7c !important;
+}
+
+.pn-purple {
+	background-color: #4d3450 !important;
+}
+
+nav .pn-nav {
+	margin-top: 2.5vh;
+	display: flex;
+	justify-content: space-around;
+	padding: 0 10%;
+	width: 100%;
+}
+
+/* introduction */
+
+section.introduction {
+	padding: 6vh 6vw 6vh 6vw;
+}
+
+
+/* primary-content */
+
+section.primary-content {
+	padding: 6vh 6vw 6vh 6vw;
+	text-align: center;
+}
+
+article.ps-article {
+	margin: 6vh 0 0 0;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+article.ps-a-first-column {
+	width: 30%;
+}
+
+div.ps-a-fc-icon1 {
+	display: inline-block;
+	height: 125px;
+	width: 125px; 
+	border-radius: 100%;
+	background: #00a3a4 url("../../assets/img/icons/airplane.png");
+	background-size: 80px 80px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+article.ps-a-second-column {
+	width: 30%;
+}
+
+div.ps-a-fc-icon2 {
+	display: inline-block;
+	height: 125px;
+	width: 125px; 
+	border-radius: 100%;
+	background: #2eae7c url("../../assets/img/icons/hands.png");
+	background-size: 80px 80px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+article.ps-a-third-column {
+	width: 30%;
+}
+
+div.ps-a-fc-icon3 {
+	display: inline-block;
+	height: 125px;
+	width: 125px; 
+	border-radius: 100%;
+	background: #4d3450 url("../../assets/img/icons/check.png");
+	background-size: 80px 80px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/* Secundary-content */
+
+section.secundary-content {
+	padding: 6vh 6vw 6vh 6vw;
+}
+
+/* tertiary-content */
+
+section.tertiary-content {
+	padding: 6vh 6vw 6vh 6vw;
+}
+
+/* quaternary-content */
+
+section.quaternary-content {
+	padding: 6vh 6vw 12vh 6vw;
+}
+
+
+/* footer */
+
+footer.footer {
+	height: auto;
+	background-color: #e72b65;
+	padding: 4vh 6vw 4vh 6vw;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+footer.footer ul li:hover {
+	transform: scale(1.2);
+}
+
+footer .f-logo {
+	flex: 0 0 100%;
+	width: 50px;
+	height: auto;
+	display: block;
+	margin: 0 auto 20px auto;
+}
+
+footer .f-icon-column {
+	margin-left: 20%;
+}
+
+ul.f-icon-column li {
+	display: inline;
+	padding-left: 10px;
+}
+
+div.f-icon1 {
+	display: inline-block;
+	height: 50px;
+	width: 50px; 
+	border-radius: 100%;
+	background: #f4f6f4 url("https://facebookbrand.com/wp-content/themes/fb-branding/prj-fb-branding/assets/images/fb-art.png");
+	background-size: 30px 30px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+div.f-icon2 {
+	display: inline-block;
+	height: 50px;
+	width: 50px; 
+	border-radius: 100%;
+	background: #f4f6f4 url("http://www.freeiconspng.com/uploads/twitter-icon-download-18.png");
+	background-size: 30px 30px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+
+div.f-icon3 {
+	display: inline-block;
+	height: 50px;
+	width: 50px; 
+	border-radius: 100%;
+	background: #f4f6f4 url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/599px-Instagram_icon.png");
+	background-size: 30px 30px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
