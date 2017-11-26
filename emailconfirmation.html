@@ -3,7 +3,7 @@
 
 <head>
 
-	<title> GoodJob! </title>
+	<title> GoodJob! - Terminar o Registro </title>
 
 	<meta charset = "UTF-8" />
 	<meta name = "viewport" content = "width=device-width, initial-scale=1" />
@@ -14,12 +14,11 @@
 	<link rel = "manifest" href = "assets/favicon/manifest.json">
 	<link rel = "mask-icon" href = "assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
 
-	<link href = "https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800|Raleway:200,300,400,500,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800|Raleway:200,300,400,500,600,700" rel="stylesheet">
 
 	<link rel = "stylesheet" href = "assets/css/SigninSingup-style.css" />
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
 
 </head>
 
@@ -43,15 +42,15 @@
 
 					<article class = "pb-signupbox" id = "singup">
 
-						<h1> Iniciar Sessão </h1>
+						<h1> Pronto! </h1>
+
+						<h2> Te enviamos um e-mail com um código para confirmação. Por favor, digite o código abaixo e você estará pronto! </h2>
 
 						<form class = "pb-sb-form">
 
-							<input name = "email" class = "ps-sc-sb-textinput" type = "text" maxlength = "40" placeholder = "Email" required>
+							<input name = "cod" class = "ps-sc-sb-textinput" type = "text" maxlength = "8" placeholder = "Código de confirmação" required>
 
-							<input name = "password" class = "ps-sc-sb-textinput" type = "password" maxlength = "25" placeholder = "Senha" required>
-
-							<button class = "pb-sb-f-button"> Entrar </button>
+							<button class = "pb-sb-f-button" formaction = "login.html"> Confirmar </button>
 
 						</form>
 
