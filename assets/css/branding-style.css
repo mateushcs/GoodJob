@@ -212,8 +212,8 @@ section.secundary-content h2 {
 }
 
 section.secundary-content h3 {
-	font: 0.9em poppins;
-	font-weight: 300;
+font: 0.9em raleway;
+	font-weight: 400;
 	color: #646664;
 	font-style: oblique;
 	text-align: center;
@@ -224,9 +224,16 @@ section.secundary-content p {
 	margin-bottom: 1.5vh;
 }
 
+section.tertiary-content p {
+	margin-bottom: 1.5vh;
+}
+
 section.tertiary-content .pc-text {
-	font: 1.0em raleway;
+	font: 0.95em raleway;
 	color: #646664;
+	text-align: justify;
+	display: block;
+	line-height: 1.7;
 }
 
 section.tertiary-content .b {
@@ -250,18 +257,20 @@ section.tertiary-content h1 {
 }
 
 section.tertiary-content h2 {
+	color: #4d3450;
 	font: 1.2em poppins;
 	font-weight: 500;
-	color: #4d3450;
-	margin: 7px 0 5px 0;
+	margin: 5vh 0 2.5vh 0;
+	text-align: center;
 }
 
 section.tertiary-content h3 {
-	font: 1.2em poppins;
-	font-weight: 300;
-	color: #4d3450;
+font: 0.9em raleway;
+	font-weight: 400;
+	color: #646646;
 	font-style: oblique;
 	text-align: center;
+	margin-bottom: 2.5vh;
 }
 
 section.quaternary-content .pc-text {
@@ -275,9 +284,20 @@ section.quaternary-content .b {
 }
 
 section.quaternary-content .i {
-		color: #00a3a8;
+	color: #00a3a8;
 	font-style: oblique;
+}
 
+section.quaternary-content a {
+	font: 0.9em raleway;
+	color: #646664;
+	margin-bottom: 0.3vh;
+	display: block;
+	transition: 0.75s;
+}
+
+section.quaternary-content a:hover {
+	color: #00a3a8;
 }
 
 section.quaternary-content h1 {
@@ -508,12 +528,69 @@ section .ss-a-cor img{
 
 section.tertiary-content {
 	padding: 6vh 11vw 6vh 11vw;
+	text-align: center;
 }
+
+article.ts-article {
+	margin: 6vh 0 0 0;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-content: center;
+}
+
+article.ts-a-first-column {
+	width: 45%;
+}
+
+div.ts-a-fc-icon1 img {
+	display: inline-block;
+	height: 150px;
+	width: auto;
+	flex: 0 0 100%;
+}
+
+article.ts-a-second-column {
+	width: 45%;
+}
+
+div.ts-a-fc-icon2 img {
+	display: inline-block;
+	height: 150px;
+	width: auto; 
+}
+
+div.ts-a-fc-icon2s img {
+	display: inline-block;
+	height: 150px;
+	width: auto; 
+	background-color: #2eae7c;
+}
+
+section .ts-a-cor {
+	text-align: center;
+}
+
+section .ts-a-cor img{
+	width: auto;
+	height: 150px;
+}
+
 
 /* quaternary-content */
 
 section.quaternary-content {
 	padding: 6vh 11vw 12vh 11vw;
+	text-align: center;
+}
+
+section .qc-flex {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: center;
+	width: 50%;
+	margin: 0 auto;
 }
 
 
