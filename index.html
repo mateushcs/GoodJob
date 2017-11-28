@@ -94,20 +94,20 @@
 
 								<form class = "ps-sc-sb-form">
 
-									<input name = "name" class = "ps-sc-sb-textinput" type = "text" maxlength = "40" placeholder = "Nome (ex: Criança Feliz)" required>
+									<input id = "projectname" class = "ps-sc-sb-textinput" type = "text" maxlength = "40" placeholder = "Nome (ex: Criança Feliz)" required>
 
 									<!--<input name = "localization" class = "ps-sc-sb-locinput" type = "text" maxlength = "50" placeholder = "Local de Atuação" required>-->
 
-									<select name = "cat" class = "ps-sc-sb-select" placeholder = "Categoria" required>
+									<select id = "projectcat" class = "ps-sc-sb-select" placeholder = "Categoria" required>
 										<option value = "" disabled selected hidden>Categoria</option>
 										<option value = "1">1</option>
 										<option value = "2">2</option>
 										<option value = "3">3</option>
 									</select>
 
-									<textarea name = "description" class = "ps-sc-sb-desc" type = "text" maxlength = "300" placeholder = "Descrição" required></textarea>
+									<textarea id = "projectdesc" class = "ps-sc-sb-desc" type = "text" maxlength = "300" placeholder = "Descrição" required></textarea>
 
-									<button class = "ps-sc-sb-f-button" formaction = "finalizesingup.html"> Começar! </button>
+									<button class = "ps-sc-sb-f-button" id = "Signup"> Começar! </button>
 
 								</form>
 
@@ -401,6 +401,21 @@
 			<script src = "https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/1.0.0/typewriter.js"></script>
 
 			<script>
+
+				// Singup
+
+				let projectname = document.querySelector('#projectname');
+				let projectcat = document.querySelector('#projectcat');
+				let projectdesc = document.querySelector('#projectdesc');
+
+				document.querySelector('#Signup').onclick = function(){
+					event.preventDefault();
+					localStorage.setItem('projectn', projectname.value);
+					localStorage.setItem('projectc', projectcat.value);
+					localStorage.setItem('projectd', projectdesc.value);
+					window.location = "finalizesignup.html";
+				}
+
 
 				// Input focus
 

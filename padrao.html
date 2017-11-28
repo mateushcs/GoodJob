@@ -129,12 +129,22 @@
 
 <script>
 
-	 document.querySelector('#usern').innerHTML = localStorage.getItem('username');
+	if (localStorage.getItem('username') != null) {
 
-	 function logout() {
-	 	alert('');
-	 	localStorage.removeItem('username');
-	 }
+	} else {
+
+    alert('Epa! Você não iniciou sua sessão. Vamos fazer isso?');
+    window.location = "login.html";
+
+	}
+
+	document.querySelector('#usern').innerHTML = localStorage.getItem('username');
+
+	function logout() {
+
+		localStorage.removeItem('username');
+		window.location = "index.html";
+	}
 
 </script>
 

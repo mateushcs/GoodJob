@@ -88,6 +88,13 @@ article.pb-signupbox h2 {
 	margin: 0 0 5vh 0;
 }
 
+article.pb-signupbox h3 {
+	color: red;
+	font: 0.9em raleway;
+	text-align: center;
+	margin: 0 0 2.5vh 0;
+}
+
 /* section: primary-box */
 
 section.primary-box {

@@ -45,7 +45,7 @@
 
 						<h1> Iniciar Sessão </h1>
 
-						<p> </p>
+						<h3> </h3>
 
 						<form class = "pb-sb-form">
 
@@ -86,32 +86,29 @@
 
 						if (userpassword.value == obj[i].password) {
 
-							alert('Logado!');
-
 							localStorage.setItem('username', obj[i].name);
 
-						} else {
+							window.location = "padrao.html"
 
-							alert('senha errada!')
+						} else {				
 						}
 
 					} else {
-
-						alert('usuário errado')
 					}
+
+					document.querySelector('h3').innerHTML = "Email ou Senha errados!";
+
 				}
 			}
 
 
 		}
 
-		document.querySelector('p').innerHTML = localStorage.getItem('username');
-
 		document.querySelector('#sendInfo').onclick = function(){
 			event.preventDefault();
-			xhttp.open('GET', 'http://rest.learncode.academy/api/learncode/testt2', true)
+			document.querySelector('h3').innerHTML = "Aguarde...";
+			xhttp.open('GET', 'http://rest.learncode.academy/api/learncode/goodjobusers', true)
 			xhttp.send();
-			/* window.location = "padrao.html" */
 		}
 
 
