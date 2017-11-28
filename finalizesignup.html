@@ -103,7 +103,10 @@
         document.querySelector("#FinishSignup").onclick = function(){
         	event.preventDefault();
         	sendSignUpInfo(projectn, projectc, projectd, useremail.value, userpassword.value, projectloc.value, username.value);
-        	window.localization = "login.html";
+        	this.disabled = true;
+        	this.style.cursor = 'wait';
+        	this.style.backgroundColor = '#aaa';
+        	setTimeout(function(){window.location = "login.html"}, 2000);
 		}
 
 	</script>
