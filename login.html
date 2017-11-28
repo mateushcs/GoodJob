@@ -45,13 +45,15 @@
 
 						<h1> Iniciar Sessão </h1>
 
+						<p> </p>
+
 						<form class = "pb-sb-form">
 
-							<input name = "email" class = "ps-sc-sb-textinput" type = "text" maxlength = "40" placeholder = "Email" required>
+							<input id = "email" class = "ps-sc-sb-textinput" type = "text" maxlength = "40" placeholder = "Email" required>
 
-							<input name = "password" class = "ps-sc-sb-textinput" type = "password" maxlength = "25" placeholder = "Senha" required>
+							<input id = "password" class = "ps-sc-sb-textinput" type = "password" maxlength = "25" placeholder = "Senha" required>
 
-							<button class = "pb-sb-f-button"> Entrar </button>
+							<button class = "pb-sb-f-button" id = "sendInfo"> Entrar </button>
 
 						</form>
 
@@ -62,6 +64,58 @@
 		</section>
 
 	</div>
+
+	<script>
+
+		let useremail = document.querySelector('#email');
+		let userpassword = document.querySelector('#password');
+		let xhttp = new XMLHttpRequest();
+
+		xhttp.onreadystatechange = function(){
+
+			if(xhttp.readyState==4){
+
+				let obj = JSON.parse(xhttp.responseText);
+
+				for (i = 0; i < obj.length; i++) {
+
+					console.log("email:" + obj[i].email);
+                	console.log("pass:" + obj[i].password + userpassword.value);
+
+					if (useremail.value == obj[i].email) {
+
+						if (userpassword.value == obj[i].password) {
+
+							alert('Logado!');
+
+							localStorage.setItem('username', obj[i].name);
+
+						} else {
+
+							alert('senha errada!')
+						}
+
+					} else {
+
+						alert('usuário errado')
+					}
+				}
+			}
+
+
+		}
+
+		document.querySelector('p').innerHTML = localStorage.getItem('username');
+
+		document.querySelector('#sendInfo').onclick = function(){
+			event.preventDefault();
+			xhttp.open('GET', 'http://rest.learncode.academy/api/learncode/testt2', true)
+			xhttp.send();
+			/* window.location = "padrao.html" */
+		}
+
+
+	</script>
 
 </body>
 </html>
