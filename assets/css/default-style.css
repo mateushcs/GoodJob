@@ -124,7 +124,7 @@ section.primary-content .breadcrumbs li:hover {
 }
 
 section.primary-content .pc-text {
-	font: 0.8em raleway;
+	font: 0.95em raleway;
 	color: #646664;
 }
 
@@ -137,7 +137,7 @@ section.primary-content h1 {
 }
 
 section.primary-content h2 {
-	font: 1em poppins;
+	font: 1.05em poppins;
 	font-weight: 500;
 	color: #646664;
 	margin: 7px 0 5px 0;
@@ -265,7 +265,7 @@ header.header-authenticated .h-a-icons img:hover {
 
 header .h-a-u-username ul {
 	position: absolute;
-	margin-left: -4vw;
+	margin-left: -8vw;
 	background-color: #f6f4f6;
 	max-height: 0;
 	box-shadow: 5px 5px rgba(0 , 0 , 0, 0.2);

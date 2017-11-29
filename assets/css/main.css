@@ -420,12 +420,12 @@ article .ps-sc-sb-grid {
 }
 
 article .ps-sc-sb-s-icon {
-       height: 60px;
-       width: 60px; 
+       height: 10vh;
+       width: 10vh; 
        border-radius: 100%;
        overflow: hidden;
        background: #ff356f url("../../assets/img/icons/hands.png");
-       background-size: 45px 45px;
+       background-size: 7vh 7vh;
        background-repeat: no-repeat;
        background-position: center center;
        margin-right: 25px;
@@ -433,12 +433,12 @@ article .ps-sc-sb-s-icon {
 }
 
 article .ps-sc-sb-p-icon {
-       height: 60px;
-       width: 105px; 
+       height: 10vh;
+       width: 18vh; 
        border-radius: 100%;
        overflow: hidden;
        background: #ff356f url("../../assets/img/icons/plus.png");
-       background-size: 45px 45px;
+       background-size: 7vh 7vh;
        background-repeat: no-repeat;
        background-position: center center;
        margin-right: 25px;
@@ -464,7 +464,6 @@ input.ps-sc-sb-textinput {
 	padding: 10px;
 	font: 0.9em poppins;
 	color: #777;
-	text-transform: uppercase;
 	border: 1px solid #ccc;
 	margin: 0 0 15px 0;
 }
@@ -476,7 +475,6 @@ input.ps-sc-sb-locinput {
 	padding: 10px;
 	font: 0.9em poppins;
 	color: #777;
-	text-transform: uppercase;
 	border: 1px solid #ccc;
 	margin: 0 0 15px 0;
 } 
@@ -487,7 +485,6 @@ select.ps-sc-sb-select {
 	padding: 10px;
 	font: 0.9em poppins;
 	color: #777;
-	text-transform: uppercase;
 	border: 1px solid #ccc;
 	margin: 0 0 15px 0;
 }
@@ -503,7 +500,6 @@ textarea.ps-sc-sb-desc {
 	padding: 10px;
 	font: 0.9em poppins;
 	color: #777;
-	text-transform: uppercase;
 	border: 1px solid #ccc;
 	margin: 0 0 15px 0;
 	resize: none;
@@ -589,7 +585,7 @@ article.ss-article {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	align-items: center;
+	align-content: center;
 }
 
 article.ss-a-first-column {
@@ -660,7 +656,8 @@ section.tertiary-section {
 	height: auto;
 	padding: 6%;
 	text-align: center;
-	background-image: url('http://genreisdead.com/wp-content/uploads/2017/07/kesha.jpg');
+	background-color: rgba(255,53,111,0.88);
+	background-image: url('https://static.pexels.com/photos/7063/man-notebook-notes-macbook.jpg');
 	background-size: 100% auto;
 	background-position: 50% 0;
     background-repeat: repeat;
@@ -708,9 +705,9 @@ button.ts-a-singup-button {
 	width: 33%;
 	padding: 10px;
 	border: none;
-	background-color: #4d3450;
+	background-color: #f4f6f4;
 	font: 1.1em poppins;
-	color: #f6f4f6;
+	color: #e72b65;
 	text-transform: uppercase;
 	transition: 1s;
 	margin: 6% auto 0 auto;

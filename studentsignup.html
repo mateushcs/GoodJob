@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title> GoodJob! - Registro de Usuário </title>
+
+	<meta charset = "UTF-8" />
+	<meta name = "viewport" content = "width=device-width, initial-scale=1" />
+
+	<link rel = "apple-touch-icon" sizes = "180x180" href = "assets/favicon/apple-touch-icon.png">
+	<link rel = "icon" type = "image/png" sizes = "32x32" href = "assets/favicon/favicon-32x32.png">
+	<link rel = "icon" type = "image/png" sizes = "16x16" href = "assets/favicon/favicon-16x16.png">
+	<link rel = "manifest" href = "assets/favicon/manifest.json">
+	<link rel = "mask-icon" href = "assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+
+	<link href = "https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800|Raleway:200,300,400,500,600,700" rel="stylesheet">
+
+	<link rel = "stylesheet" href = "assets/css/SigninSingup-style.css" />
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+	
+	<div class = "wrapper"> 
+		<!-- Primary Box -->
+		<section class = "primary-box">
+
+			<video class = "pb-background" video autobuffer autoplay muted loop>
+				<source id = "mp4" src = "assets/video/demo.mp4" type = "video/mp4">
+				</video>
+				<!-- Header -->
+				<header class = "header">
+
+					<a href = "index.html"><img src = "assets/img/logo.png" class = "logo"></a>
+
+				</header>
+
+				<div class = "pb-sb-fix">
+
+					<article class = "pb-signupbox" id = "singup">
+
+						<h1> Descubra o GoodJob! </h1>
+
+						<h2> Você só precisa preencher as seguintes informaçõees. </h2>
+
+						<p></p>
+
+						<form class = "pb-sb-form">
+
+							<input id = "email" class = "ps-sc-sb-textinput" type = "text" maxlength = "40" placeholder = "Email (utilizado para acessar)" required>
+
+							<input id = "password" class = "ps-sc-sb-textinput" type = "password" maxlength = "25" placeholder = "Senha (utilizado para acessar)" required>
+
+							<input id = "name" class = "ps-sc-sb-textinput" type = "text" maxlength = "40" placeholder = "Nome" required>
+
+							<button class = "pb-sb-f-button" id = "FinishSignup"> Cadastrar </button>
+
+						</form>
+
+						<div class = "pb-triangle"> </div>
+
+				</article>
+			</div>
+		</section>
+
+	</div>
+
+	<script>
+
+		if (localStorage.getItem('projectn') != null) {
+
+		} else {
+			alert('Você precisa preencher algumas coisas antes! Vamos voltar?');
+			window.location = "index.html";
+		}
+		
+		let useremail = document.querySelector('#email');
+		let userpassword = document.querySelector('#password');
+		let username = document.querySelector('#name');
+
+		function sendSignUpInfo(useremail, userpassword, username){
+
+            let xhttp = new XMLHttpRequest();
+
+            xhttp.open("POST", "http://rest.learncode.academy/api/learncode/goodjobusers", true);
+            xhttp.setRequestHeader("Content-Type","application/json");
+            let info = {"email":useremail, "password":userpassword, "name":username};
+            let b = JSON.stringify(info);
+            xhttp.send(b);
+        }
+
+        document.querySelector("#FinishSignup").onclick = function(){
+        	event.preventDefault();
+        	sendSignUpInfo(useremail.value, userpassword.value, username.value);
+        	this.disabled = true;
+        	this.style.cursor = 'wait';
+        	this.style.backgroundColor = '#aaa';
+        	setTimeout(function(){window.location = "login.html"}, 2000);
+		}
+
+	</script>
+
+</body>
+</html>

@@ -161,7 +161,7 @@
 
 				<div class = "ss-a-cor"><img src = "assets/img/cores.png">
 
-				<h3> Paleta de Cores </h3>
+					<h3> Paleta de Cores </h3>
 
 				</div>
 
@@ -200,7 +200,7 @@
 
 				<span class = "pc-text"><p> O logotipo da marca pode ser aplicado de duas maneiras: verticalmente ou horizontalmente. A forma vertical é preferencial e deve ser utilizada em todas as ocasiões em que for aplicável. A variação horizontal só deve ser utilizada nos casos em que a vertical possua pouca eficiência, e pode ser utilizada de duas formas: com o símbolo na lateral, ou superior. </p>
 
-				<p> O símbolo da marca varia de duas maneiras: sua forma padrão e sua forma mínima. A forma padrão do símbolo é preferencial e deve ser utilizada em todas as ocasiões em que for aplicável. A forma mínima só deve ser utilizada nos casos em que a forma padrão possua pouca eficiência.
+					<p> O símbolo da marca varia de duas maneiras: sua forma padrão e sua forma mínima. A forma padrão do símbolo é preferencial e deve ser utilizada em todas as ocasiões em que for aplicável. A forma mínima só deve ser utilizada nos casos em que a forma padrão possua pouca eficiência.
 					</p> </span>
 
 					<h2> Área de Proteção </h2>
@@ -229,7 +229,7 @@
 
 					<img src = "assets/img/ac.png"><br><img src = "assets/img/apb.png">
 
-						<h3> Escala de Aplicação Acromática </h3>
+					<h3> Escala de Aplicação Acromática </h3>
 
 
 
@@ -273,27 +273,27 @@
 
 					<div>
 
-				<h2> Logo (PNG) </h2>
+						<h2> Logo (PNG) </h2>
 
-				<a href = "#">Logo Horizontal</a><br>
-				<a href = "#">Logo Vertical</a><br>
-				<a href = "#">Logo Horizontal P/B</a><br>
-				<a href = "#">Logo Vertical P/B</a><br>
+						<a href = "#">Logo Horizontal</a><br>
+						<a href = "#">Logo Vertical</a><br>
+						<a href = "#">Logo Horizontal P/B</a><br>
+						<a href = "#">Logo Vertical P/B</a><br>
 
-			</div>
+					</div>
 
-			<div>
+					<div>
 
-				<h2> Símbolo (PNG) </h2>
+						<h2> Símbolo (PNG) </h2>
 
-				<a href = "#">Símbolo Padrão</a><br>
-				<a href = "#">Símbolo Mínimo</a><br>
-				<a href = "#">Símbolo Padrão (P/B)</a><br>
-				<a href = "#">Símbolo Mínimo (P/B)</a><br>
+						<a href = "#">Símbolo Padrão</a><br>
+						<a href = "#">Símbolo Mínimo</a><br>
+						<a href = "#">Símbolo Padrão (P/B)</a><br>
+						<a href = "#">Símbolo Mínimo (P/B)</a><br>
 
-			</div>
+					</div>
 
-			</div>
+				</div>
 
 			</section>
 
@@ -305,28 +305,26 @@
 					<img src = "assets/img/logo.png" class = "f-logo">
 
 				</div>
-
 				<ul class = "f-first-column"> <h4>Institucional</h4>
-					<li><a href="">Sobre nós</a></li>
-					<li><a href="">História</a></li>
-					<li><a href="">FAQ</a></li>
-					<li><a href="">Plano de Branding</a></li>
-					<li><a href="">Contato</a></li>
+					<li><a href="about.html">Sobre nós</a></li>
+					<li><a href="history.html">História</a></li>
+					<li><a href="faq.html">FAQ</a></li>
+					<li><a href="branding.html">Plano de Branding</a></li>
+					<li><a href="contact.html">Contato</a></li>
 				</ul>
 
 				<ul class = "f-second-column"> <h4>Projetos Sociais</h4>
-					<li><a href="">Guia básico</a></li>
-					<li><a href="">Solicitar projeto de design</a></li>
-					<li><a href="">Configurações</a></li>
-					<li><a href="">Suas solicitações</a></li>
+					<li><a href="psguide.html">Guia básico</a></li>
+					<li><a href="newsolicitation.html">Solicitar projeto de design</a></li>
+					<li><a href="config.html">Configurações</a></li>
+					<li><a href="ps.html">Suas solicitações</a></li>
 				</ul>
 
 				<ul class = "f-third-column"><h4>Estudantes</h4>
-					<li><a href="">Guia de básico</a></li>
-					<li><a href="">Seus projetos</a></li>
-					<li><a href="">Suas mensagens</a></li>
-					<li><a href="">Configurações</a></li>
-					<li><a href="">Listagem de solicitações cadastradas</a></li>
+					<li><a href="studentguide.html">Guia de básico</a></li>
+					<li><a href="yourprojects.html">Seus projetos</a></li>
+					<li><a href="config.html">Configurações</a></li>
+					<li><a href="allsolicitations.html">Listagem de solicitações cadastradas</a></li>
 				</ul>
 
 				<ul class = "f-icon-column">
@@ -343,35 +341,12 @@
 
 		<script>
 
-		// Check if it is on screen
+			$(function() {
 
-		$.fn.isOnScreen = function(){
-
-			var win = $(window);
-
-			var viewport = {
-				top : win.scrollTop(),
-				left : win.scrollLeft()
-			};
-
-			viewport.right = viewport.left + win.width();
-			viewport.bottom = viewport.top + win.height();
-
-			var bounds = this.offset();
-			bounds.right = bounds.left + this.outerWidth();
-			bounds.bottom = bounds.top + this.outerHeight();
-
-			return (!(viewport.right < bounds.left || viewport.left > bounds.right || viewport.bottom < bounds.top || viewport.top > bounds.bottom));
-
-		};
+				let vH = $(window).height();
 
 
-		$(function() {
-
-			let vH = $(window).height();
-
-
-			$(window).scroll(function(){
+				$(window).scroll(function(){
 
 				// Fix the menu
 
@@ -381,9 +356,6 @@
 				} else if ($(window).scrollTop() < $(window).height() / 10 ) {
 					$('.primary-nav').removeClass('pn-fixed');
 				}
-
-				// Change colors
-
 
 				if (
 					($(window).scrollTop() > $('.primary-content').offset().top - 0.16 * vH)
@@ -448,7 +420,7 @@
 }
 
 });
-		});
+			});
 
 		// Smooth Scrolling
 

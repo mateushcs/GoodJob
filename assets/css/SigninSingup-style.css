@@ -85,7 +85,18 @@ article.pb-signupbox h2 {
 	color: #777;
 	font: 0.9em raleway;
 	text-align: center;
-	margin: 0 0 5vh 0;
+	margin: 7vh 0 5vh 0;
+}
+
+article.pb-signupbox h2 a {
+	color: #e72b65;
+	transition: 0.75s;
+
+}
+
+article.pb-signupbox h2 a:hover {
+	font-size: 1.05em;
+
 }
 
 article.pb-signupbox h3 {
@@ -161,7 +172,6 @@ input.ps-sc-sb-textinput {
 	padding: 10px;
 	font: 0.9em poppins;
 	color: #777;
-	text-transform: uppercase;
 	border: 1px solid #ccc;
 	margin: 0 0 15px 0;
 }
@@ -173,7 +183,6 @@ input.ps-sc-sb-locinput {
 	padding: 10px;
 	font: 0.9em poppins;
 	color: #777;
-	text-transform: uppercase;
 	border: 1px solid #ccc;
 	margin: 0 0 15px 0;
 } 
@@ -190,7 +199,7 @@ button.pb-sb-f-button {
 	font: 1.1em poppins;
 	color: #f6f4f6;
 	text-transform: uppercase;
-	transition: 1s;
+	transition: 0.35s;
 }
 
 button.pb-sb-f-button:hover {
