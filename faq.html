@@ -75,16 +75,23 @@
 		As perguntas abaixo devem lhe ajudar compreender melhor a plataforma e sanar suas dúvidas. Caso ainda precise de mais informações, não hesite em nos contatar!
 
 		<p><br></p>
-			<h2> Pergunta: C? </h2>
 
-			A
+		<div class = "faq-flex">
+			<h3> Funcionamento </h3>
+			<div>
+				<h2> Pergunta </h2>
 
-			<h2> Pergunta: C? </h2>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id aut suscipit ea nesciunt ut. Eum vitae laboriosam rem fuga! Iusto corrupti placeat ducimus molestias eum nemo est labore excepturi quo!
 
-			A
+			</div>
+			<div>
 
+				<h2> Pergunta </h2>
 
-	</div>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil doloribus incidunt vel illum sit, dolore esse hic, modi fuga quia vero laborum officia cum ab eligendi ipsam soluta architecto neque.
+
+			</div>
+		</div>
 
 
 </section>
@@ -133,16 +140,7 @@
 
 <script>
 
-	if (localStorage.getItem('username') != null) {
-
-	} else {
-
-		alert('Epa! Você não iniciou sua sessão. Vamos fazer isso?');
-		window.location = "login.html";
-
-	}
-
-	document.querySelector('#usern').innerHTML = localStorage.getItem('username');
+	document.querySelector('#usern').innerHTML = "Oi, " + localStorage.getItem('username');
 
 	function logout() {
 		localStorage.removeItem('username');

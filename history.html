@@ -124,16 +124,7 @@
 
 <script>
 
-	if (localStorage.getItem('username') != null) {
-
-	} else {
-
-    alert('Epa! Você não iniciou sua sessão. Vamos fazer isso?');
-    window.location = "login.html";
-
-	}
-
-	document.querySelector('#usern').innerHTML = localStorage.getItem('username');
+	document.querySelector('#usern').innerHTML = "Oi, " + localStorage.getItem('username');
 
 	function logout() {
 		localStorage.removeItem('username');

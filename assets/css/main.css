@@ -222,7 +222,7 @@ section.tertiary-section h2 {
 }
 
 span.ts {
-	color: #ccc;
+	color: #f4f6f4;
 }
 
 section.quaternary-section h1 {
@@ -517,7 +517,7 @@ button.ps-sc-sb-f-button {
 	font: 1.1em poppins;
 	color: #f6f4f6;
 	text-transform: uppercase;
-	transition: 1s;
+	transition: 0.35s;
 }
 
 button.ps-sc-sb-f-button:hover {
@@ -641,7 +641,7 @@ button.ss-a-singup-button {
 	font: 1.1em poppins;
 	color: #f6f4f6;
 	text-transform: uppercase;
-	transition: 1s;
+	transition: 0.35s;
 	margin: 0 auto 3% auto;
 }
 
@@ -656,8 +656,7 @@ section.tertiary-section {
 	height: auto;
 	padding: 6%;
 	text-align: center;
-	background-color: rgba(255,53,111,0.88);
-	background-image: url('https://static.pexels.com/photos/7063/man-notebook-notes-macbook.jpg');
+	background-image: url('../../assets/img/studentbg.png');
 	background-size: 100% auto;
 	background-position: 50% 0;
     background-repeat: repeat;
@@ -709,7 +708,7 @@ button.ts-a-singup-button {
 	font: 1.1em poppins;
 	color: #e72b65;
 	text-transform: uppercase;
-	transition: 1s;
+	transition: 0.35s;
 	margin: 6% auto 0 auto;
 }
 
