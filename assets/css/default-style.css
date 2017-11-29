@@ -57,6 +57,70 @@ a {
 
 @import url('https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800');
 
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800');
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800');
+
+
+@font-face {
+	font-family: 'poppins';
+	src: url('../../assets/fonts/Poppins-Black.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'poppins';
+	src: url('../../assets/fonts/Poppins-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'poppins';
+	src: url('../../assets/fonts/Poppins-Bold.woff') format('woff');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'poppins';
+	src: url('../../assets/fonts/Poppins-Light.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'raleway';
+	src: url('../../assets/fonts/Raleway-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'raleway';
+	src: url('../../assets/fonts/Raleway-Light.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'raleway';
+	src: url('../../assets/fonts/Raleway-Bold.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'raleway';
+	src: url('../../assets/fonts/Raleway-Black.woff') format('woff');
+	font-weight: 600;
+	font-style: normal;
+}
+
+
+
 /* default settings */
 
 @viewport{
@@ -126,6 +190,15 @@ section.primary-content .breadcrumbs li:hover {
 section.primary-content .pc-text {
 	font: 0.95em raleway;
 	color: #646664;
+}
+
+section.primary-content .pc-text a {
+	color: #e72b65;
+	transition: 0.75s;
+}
+
+section.primary-content .pc-text a:hover {
+	color: #bbb;
 }
 
 section.primary-content h1 {

@@ -69,6 +69,15 @@
 
 	<script>
 
+		if (localStorage.getItem('username') != null) {
+
+			alert('Epa! Você já iniciou uma sessão!');
+			window.location = "explore.html";
+
+		} else {
+
+		}
+
 		let useremail = document.querySelector('#email');
 		let userpassword = document.querySelector('#password');
 		let xhttp = new XMLHttpRequest();
