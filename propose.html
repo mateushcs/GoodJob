@@ -51,7 +51,7 @@
 						<ul>
 							<li><a href = "#"> Visualizar Perfil</a></li>
 							<li><a href = "#"> Meus Projetos</a></li>
-							<li><a href = "config.html"> Configurações</a></li>
+							<li><a href = "#"> Configurações</a></li>
 							<li><a href = "#"><p onclick = "logout()">Sair</p></a></li>
 						</ul>
 					</div>
@@ -65,38 +65,28 @@
 
 			<div class = "breadcrumbs"><ul>
 				<li><a href = "index.html"> Página Inicial > </a></li>
-			Solicitar Projeto</a>
+			Enviar proposta</a>
 			</ul>
 
 			</div>
 
-			<h1> Solicite um novo projeto de design </h1>
+			<h1> Envie sua proposta para o projeto "Criança Feliz" </h1>
 
-			<div class = "pc-text"> Para solicitar um novo projeto, é só cadastrar as informações abaixo. É rapidinho!
+			<div class = "pc-text"> Para enviar uma proposta, é só cadastrar as informações abaixo. É rapidinho!
 
 			<form class = "pb-sb-form">
 
-				<select id = "method" name="method" class = "ps-sc-sb-select" placeholder = "Categoria" required>
-					<option value = "" disabled selected hidden>O que você precisa?</option>
-					
-					<option name="method" value="email" data-example="*Um logo é uma imagem que representa a sua instituição. Por exemplo, a carinha feliz no canto superior dessa página é o logo do goodjob. Ele é utilizado em todo lugar, e serve para você reconhecer o a instituição só de olhar para a imagem!">Logo</option>
-					
-					<option name="method" value="web" data-example="*Uma campanha publicitária é uma ação nas redes sociais (como facebook, instagram e twitter) para divulgar a sua instituição, com imagens, chamadas e anuncios.">Campanha Publicitária</option>
-
-					<option name="method" value="email" data-example="*Um banner é uma imagem grande para promover ou anunciar a sua instituição.">Banner</option>
-					
-					<option name="method" value="web" data-example="*O logotipo é o nome da sua institucição de forma atrativa, ou seja, com símbolos e cores, entre outros. Pode ser usado nos mais diversos locais.">Logotipo</option>
-				</select>
-
 				<span id = "text"></span><p><br></p>
 
-				<input class = "ps-sc-sb-textinput" type = "text" maxlength = "250" placeholder = "Descrição (conte mais sobre o seu projeto!)" required>
+				<input class = "ps-sc-sb-textinput" type = "text" maxlength = "250" placeholder = "Título" required>
 
-				<input class = "ps-sc-sb-textinput" type = "text" maxlength = "40" placeholder = "Tempo (diga quanto tempo o estudante terá para fazer)" required>
+				<input class = "ps-sc-sb-textinput" type = "text" maxlength = "250" placeholder = "Descrição (descreva sua proposta)" required>
 
-				<input class = "ps-sc-sb-textinput" type = "text" maxlength = "80" placeholder = "Imagem do seu projeto (link)" required>
+				<input class = "ps-sc-sb-textinput" type = "text" maxlength = "40" placeholder = "Tempo (diga quanto acha que durará para fazer)" required>
 
-				<button class = "pb-sb-f-button" formaction = "explore.html"> Cadastrar </button>
+				<input class = "ps-sc-sb-textinput" type = "text" maxlength = "80" placeholder = "Anexos (link dos anexos, separados por vírgula)" required>
+
+				<button class = "pb-sb-f-button" formaction = "enviou.html"> Enviar </button>
 
 			</form>
 
