@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title> Trabalho 02 - Mateus Henrique</title>
+
+	<meta charset = "UTF-8" />
+	<link rel = "stylesheet" href = "css/style.css" />
+	<link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+		<link rel = "stylesheet" href = "../assets/css/default-style.css" />
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+	
+	<div class = "wrapper">
+
+		<header class = "header-authenticated">
+
+			<a href = "index.html"><img src = "../assets/img/logo.png" class = "logo"></a>
+
+			<form action = "searchresults.html"> 
+				<input name = "search" type = "search" placeholder = "Pesquise por solicitações, pessoas ou instituições" class = "h-a-f-searchinput">
+			</form>
+
+
+			<div class = "h-a-icons">
+				<a href = "../newsolicitation.html"><img src = "../assets/img/icons/plus.png"></a>
+				<a href = "../yourprojects.html"><img src = "../assets/img/icons/todolist.png"></a>
+				<img src = "../assets/img/icons/notification.png">
+			</div>
+
+			<div class = "h-a-usermenu">
+				<div class = "h-a-u-dropdown">
+
+					<div class = "h-a-u-username">
+						<a href = "#"><p id = "usern"></p></a>
+
+						<ul>
+							<li><a href = "#"> Visualizar Perfil</a></li>
+							<li><a href = "#"> Meus Projetos</a></li>
+							<li><a href = "#"> Configurações</a></li>
+							<li><a href = "#"><p onclick = "logout()">Sair</p></a></li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+
+		</header>
+
+		<div class = "contactlist">
+
+		<!-- Via Javascript -->
+
+		</div>
+
+		<div class = "content">
+
+		<!-- Como deve ficar a estrutura -->
+
+			<div class = "message-user">
+				Lorem ipsum dolor sit amet. :) 
+
+				<span class = "author-user"> Lorena 
+					<span class = "fa fa-check check-icon"></span> 
+
+				</span>
+
+			</div>
+
+			<div class = "message-contact">
+				Repellendus tempore dolorem sapiente at! Expedita? 
+
+				<span class = "author-contact">
+					<span class = "fa fa-check check-icon"> </span>
+
+					Loremo
+				</span>
+
+			</div>
+
+			<div class = "message-user">
+				Lorem ipsum dolor sit amet. :) 
+
+				<span class = "author-user"> Lorena 
+					<span class = "fa fa-check check-icon"></span> 
+
+				</span>
+
+			</div>
+
+			<div class = "message-contact">
+				Repellendus tempore dolorem sapiente at! Expedita? 
+
+				<span class = "author-contact">
+					<span class = "fa fa-check check-icon"> </span>
+
+					Loremo
+				</span>
+
+			</div>
+
+		</div>
+		<div class = "writemessage">
+			<form action = "">
+				<input id = "message" type = "text" class = "message-input">
+				<input id = "sendMessage" class = "sendmessage" type = "submit" value = "&#xf1d8;"> 
+			</form>
+		</div>
+
+		<footer class = "footer" style = "width: 88vw">
+
+	<div class = "f-logo">
+
+		<img src = "assets/img/logo.png" class = "f-logo">
+
+	</div>
+
+	<ul class = "f-first-column"> <h4>Institucional</h4>
+		<li><a href="about.html">Sobre nós</a></li>
+		<li><a href="history.html">História</a></li>
+		<li><a href="faq.html">FAQ</a></li>
+		<li><a href="branding.html">Plano de Branding</a></li>
+		<li><a href="contact.html">Contato</a></li>
+	</ul>
+
+	<ul class = "f-second-column"> <h4>Projetos Sociais</h4>
+		<li><a href="psguide.html">Guia básico</a></li>
+		<li><a href="newsolicitation.html">Solicitar projeto de design</a></li>
+		<li><a href="config.html">Configurações</a></li>
+		<li><a href="ps.html">Suas solicitações</a></li>
+	</ul>
+
+	<ul class = "f-third-column"><h4>Estudantes</h4>
+		<li><a href="studentguide.html">Guia de básico</a></li>
+		<li><a href="yourprojects.html">Seus projetos</a></li>
+		<li><a href="config.html">Configurações</a></li>
+		<li><a href="allsolicitations.html">Listagem de solicitações cadastradas</a></li>
+	</ul>
+
+	<ul class = "f-icon-column">
+		<li><a href=""><div class = "f-icon1"></div></a></li>
+		<li><a href=""><div class = "f-icon2"></div></a></li>
+		<li><a href=""><div class = "f-icon3"></div></a></a></li>
+	</ul>
+
+	<span class = "f-description"> GoodJob. Todos os direitos reservados. 2017. </span>
+
+</footer>
+
+</div>
+
+		<script>
+
+				$("#method").change(function() {
+		$('#text').text($('option:selected').attr('data-example'));
+	}).change();
+
+	if (localStorage.getItem('username') != null) {
+
+	} else {
+
+    alert('Epa! Você não iniciou sua sessão. Vamos fazer isso?');
+    window.location = "login.html";
+
+	}
+
+	document.querySelector('#usern').innerHTML = "Oi, " + localStorage.getItem('username');
+
+	function logout() {
+		localStorage.removeItem('username');
+		window.location = "index.html";
+	}
+
+			let content = document.querySelector(".content");
+			let contactList = document.querySelector(".contactlist");
+			let span = document.createElement("span");
+			span.className = "fa fa-user-circle contact-icon";
+			let checkIcon = document.createElement("span");
+			checkIcon.className = "fa fa-check check-icon";
+
+			/* João */
+
+			let contactJoao = document.createElement("a");
+
+			let Joao = document.createTextNode("João");
+
+			contactJoao.appendChild(span.cloneNode(true));
+			contactJoao.appendChild(Joao);
+
+			contactJoao.href = "#void";
+
+			/* José */
+
+			let contactJose = document.createElement("a");
+
+			let Jose = document.createTextNode("José"); /* usa + para varios elementos */
+
+			contactJose.appendChild(span.cloneNode(true));
+			contactJose.appendChild(Jose);
+
+			contactJose.href = "#void";
+
+			/* */
+
+			contactList.appendChild(contactJoao);
+			contactList.appendChild(contactJose); 
+
+			/* calling the functons */
+
+			contactJoao.onclick = function () {
+				showJoaoMessages();
+			};
+
+			contactJose.onclick = function () {
+				showJoseMessages();
+			};
+
+			/* functions */
+
+			function showJoaoMessages() { 
+
+				/* usar JSON */
+
+				content.innerHTML = "";
+
+				let messageUser = document.createElement("div");
+				messageUser.className = "message-user";
+
+				let userText = document.createTextNode("Ei, guri! Tudo bem?");
+				let userAuthor = document.createElement("span");
+				userAuthor.className = "author-user";
+
+				let userAuthorText = document.createTextNode("Você ");
+
+				userAuthor.appendChild(userAuthorText);
+				userAuthor.appendChild(checkIcon);
+
+				messageUser.appendChild(userText);
+				messageUser.appendChild(userAuthor);
+				content.appendChild(messageUser);
+
+			};
+
+			function showJoseMessages() {
+				alert('josé');
+			};
+
+
+		</script>
+
+	</body>
+</html>
