@@ -17,10 +17,10 @@
 
 	<script src = "https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 
-    <script>
-      window.sr = ScrollReveal();
+	<script>
+		window.sr = ScrollReveal();
 
-    </script>
+	</script>
 
 </head>
 
@@ -50,7 +50,18 @@
 						<h1> O seu projeto social pode receber um toque dos designers! </h1>
 
 						<div class = "ps-fc-description">
-							Aqui você encontra ajuda para dar mais visibilidade ao seu projeto social, os estudantes de design podem te ajudar com <span id = "typewriter"></span>
+							Aqui você encontra ajuda para dar mais visibilidade ao seu projeto social, os estudantes de design podem te ajudar com <span id = "typewriter"></span></div>
+
+							<a class = "ps-fc-video" href = "#video" id="myBtn">Veja o video</a>
+
+							<div id="myModal" class="modal">
+								<div class="modal-content">
+									<span class="close">&times;</span>
+									<p>Vídeo aqui...</p>
+								</div>
+
+							</div>
+
 
 						</article>
 
@@ -334,7 +345,7 @@
 
 						</div>
 
-							<div class = "qs-j-container" onclick = "window.location.href = 'childrenproject.html'">
+						<div class = "qs-j-container" onclick = "window.location.href = 'childrenproject.html'">
 
 							<div class = "qs-j-c-img">
 
@@ -377,53 +388,53 @@
 					</video>
 
 
-			</section>
+				</section>
 
-			<footer class = "footer">
+				<footer class = "footer">
 
-				<div class = "f-logo">
+					<div class = "f-logo">
 
-					<img src = "assets/img/logo.png" class = "f-logo">
+						<img src = "assets/img/logo.png" class = "f-logo">
 
-				</div>
+					</div>
 
-				<ul class = "f-first-column"> <h4>Institucional</h4>
-					<li><a href="about.html">Sobre nós</a></li>
-					<li><a href="history.html">História</a></li>
-					<li><a href="faq.html">FAQ</a></li>
-					<li><a href="branding.html">Plano de Branding</a></li>
-					<li><a href="contact.html">Contato</a></li>
-				</ul>
+					<ul class = "f-first-column"> <h4>Institucional</h4>
+						<li><a href="about.html">Sobre nós</a></li>
+						<li><a href="history.html">História</a></li>
+						<li><a href="faq.html">FAQ</a></li>
+						<li><a href="branding.html">Plano de Branding</a></li>
+						<li><a href="contact.html">Contato</a></li>
+					</ul>
 
-				<ul class = "f-second-column"> <h4>Projetos Sociais</h4>
-					<li><a href="psguide.html">Guia básico</a></li>
-					<li><a href="newsolicitation.html">Solicitar projeto de design</a></li>
-					<li><a href="config.html">Configurações</a></li>
-					<li><a href="ps.html">Suas solicitações</a></li>
-				</ul>
+					<ul class = "f-second-column"> <h4>Projetos Sociais</h4>
+						<li><a href="psguide.html">Guia básico</a></li>
+						<li><a href="newsolicitation.html">Solicitar projeto de design</a></li>
+						<li><a href="config.html">Configurações</a></li>
+						<li><a href="ps.html">Suas solicitações</a></li>
+					</ul>
 
-				<ul class = "f-third-column"><h4>Estudantes</h4>
-					<li><a href="studentguide.html">Guia de básico</a></li>
-					<li><a href="yourprojects.html">Seus projetos</a></li>
-					<li><a href="config.html">Configurações</a></li>
-					<li><a href="allsolicitations.html">Listagem de solicitações cadastradas</a></li>
-				</ul>
+					<ul class = "f-third-column"><h4>Estudantes</h4>
+						<li><a href="studentguide.html">Guia de básico</a></li>
+						<li><a href="yourprojects.html">Seus projetos</a></li>
+						<li><a href="config.html">Configurações</a></li>
+						<li><a href="allsolicitations.html">Listagem de solicitações cadastradas</a></li>
+					</ul>
 
-				<ul class = "f-icon-column">
-					<li><a href=""><div class = "f-icon1"></div></a></li>
-					<li><a href=""><div class = "f-icon2"></div></a></li>
-					<li><a href=""><div class = "f-icon3"></div></a></a></li>
-				</ul>
+					<ul class = "f-icon-column">
+						<li><a href=""><div class = "f-icon1"></div></a></li>
+						<li><a href=""><div class = "f-icon2"></div></a></li>
+						<li><a href=""><div class = "f-icon3"></div></a></a></li>
+					</ul>
 
-				<span class = "f-description"> GoodJob. Todos os direitos reservados. 2017. </span>
+					<span class = "f-description"> GoodJob. Todos os direitos reservados. 2017. </span>
 
-			</footer>
+				</footer>
 
-			<div class = "overlay"></div>
+				<div class = "overlay"></div>
 
-			<script src = "https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/1.0.0/typewriter.js"></script>
+				<script src = "https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/1.0.0/typewriter.js"></script>
 
-			<script>
+				<script>
 
 				// Singup
 
@@ -463,9 +474,9 @@
 				// Make the Arrow Dissapear
 
 				if ($('.ps-arrow').offset().top > $('.secundary-section').offset().top * 1.1) {
-						$('.ps-arrow').hide();
-						}
-				});
+					$('.ps-arrow').hide();
+				}
+			});
 
 				$(window).scroll(function () {
 					if ($(this).scrollTop() > ($('.secundary-section').offset().top / 3)) {
@@ -503,7 +514,7 @@
 				.typeString('um novo banner!')
 				.pauseFor(2000)
 				.deleteAll()
-				.typeString('uma capmpanha para suas redes sociais!')
+				.typeString('uma campanha para suas redes sociais!')
 				.pauseFor(2000)
 				.start();
 
@@ -537,7 +548,33 @@
 				}	
 			});
 
+				// Get the modal
+				var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal 
+btn.onclick = function() {
+	modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+	modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+	if (event.target == modal) {
+		modal.style.display = "none";
+	}
+}
+
 </script>
 
-</body>
-</html>
+	</body>
+	</html>

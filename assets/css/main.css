@@ -147,6 +147,46 @@ hr.ps-sb-hr  {
 	margin: 20px 0 20px 0;
 }
 
+/* Modal */
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    transition: 0.75s;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 /* tipography */
 
 section.primary-section h1 {
@@ -156,19 +196,37 @@ section.primary-section h1 {
 	font-weight: 700;
 	line-height: 1.6;
 	text-align: center;
-	margin: 0 0 50px 0;
+	margin: 0 0 3vh 0;
 }
 
 div.ps-fc-description {
 	color: #f6f4f6;
-	font: 1.4em poppins;
+	font: 1.1em poppins;
 	font-weight: 300;
 	line-height: 1.7;
 	letter-spacing: 1px;
 	text-align: center !important;
 	transition: 0.75s;
+	margin: 0 0 3vh 0;
 }
 
+a.ps-fc-video {
+	text-transform: uppercase;
+	font: 0.9em poppins;
+	width: 40%;
+	background-color: #f4f6f4;
+	color: #e72b65;
+	padding: 5px;
+	transition: 0.75s;
+	text-align: center;
+	margin: 0 auto;
+	display: block;
+}
+
+a.ps-fc-video:hover {
+	font-size: 1.1em;
+	width: 45%;
+}
 article .ps-sc-sb-student-description {
 	font: 1.0em poppins;
 	font-weight: 300;
