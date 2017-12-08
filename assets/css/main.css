@@ -114,9 +114,6 @@ a {
 	font-style: normal;
 }
 
-
-
-
 /* default settings */
 
 @viewport{
@@ -555,7 +552,7 @@ article .ps-sc-sb-p-icon {
        width: 18vh; 
        border-radius: 100%;
        overflow: hidden;
-       background: #ff356f url("../../assets/img/icons/plus.png");
+       background: #ff356f url("../../assets/img/icons/sun.png");
        background-size: 7vh 7vh;
        background-repeat: no-repeat;
        background-position: center center;

@@ -49,7 +49,7 @@
 
 						<ul>
 							<li><a href = "#"> Visualizar Perfil</a></li>
-							<li><a href = "yourprojects.html"> Meus Projetos</a></li>
+							<li><a href = "#"> Meus Projetos</a></li>
 							<li><a href = "config.html"> Configurações</a></li>
 							<li><a href = "profile.html"><p onclick = "logout()">Sair</p></a></li>
 						</ul>
@@ -63,14 +63,56 @@
 		<section class = "primary-content"> 
 
 			<div class = "breadcrumbs"><ul>
-				Configurações
-		</ul>
+				<li><a href = "index.html"> Página Inicial > </a></li>
+				<li><a href = "explore.html"> Perfil > </a></li>
+			Username </a>
+				</ul>
+
+			</div>
+
+
+
+		<div class = "userphoto"> </div>
+
+		<div class = "project-flex">
+
+		<h1> </h1>
 
 	</div>
 
-	<h1> Configurações </h1>
+		 <h5> Responsávwl: Alberto Costa da Silva <br> Desde 20/07/2017 <br> www.ongfulano.com.br <br> Animais e veterinária</h5>
 
-	<div class = "pc-text"> Configurações alteradas com sucesso! </div>
+		 <div class = "pc-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque quam modi laboriosam necessitatibus harum! Ducimus optio laboriosam nam totam. Ipsum cum dolor minus aspernatur cupiditate sapiente repudiandae soluta laborum dolores? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sequi voluptate corrupti. Unde sit enim animi architecto recusandae, placeat error in nihil delectus illo ducimus amet, doloremque consequuntur, id voluptatem. </div>
+
+		 <h2> Solicitações de Job </h2>
+
+		 <div class = "qs-j-container" onclick = "window.location.href = 'childrenproject.html'">
+
+				<div class = "qs-j-c-img">
+
+					<img class = "qs-j-c-i-fit" src = "http://www.cachouston.org/media/files/story/b459d7d9/children-rotator.jpg">
+
+				</div>
+
+				<div class = "qs-j-c-marginfix">
+
+					<h2> Projeto: Criança Feliz </h2>
+
+					<div class = "qs-j-c-description">
+						O projeto criança feliz busca ajudar crianças a terem uma infância mais justa, por meio da arrecadação de brinquedos e comidas.
+					</div>
+
+					<div class = "qs-j-c-highlight"> Logotipo </div>
+
+				</div>
+
+				<div class = "qs-j-c-hover"> Saiba Mais e Ajude! </div>
+
+			</div>
+
+		 <h2> Fotos </h2>
+
+		 ...
 
 </section>
 
@@ -128,6 +170,8 @@
 	}
 
 	document.querySelector('#usern').innerHTML = "Oi, " + localStorage.getItem('username');
+
+	document.querySelector('h1').innerHTML = localStorage.getItem('username');
 
 	function logout() {
 		localStorage.removeItem('username');
