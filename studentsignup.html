@@ -81,6 +81,8 @@
 
 							<input id = "name" class = "ps-sc-sb-textinput" type = "text" maxlength = "40" placeholder = "Nome" required>
 
+							<input id = "type" type = "hidden" value = "student">
+
 							<button class = "pb-sb-f-button" id = "FinishSignup"> Cadastrar </button>
 
 						</form>
@@ -98,21 +100,22 @@
 		let useremail = document.querySelector('#email');
 		let userpassword = document.querySelector('#password');
 		let username = document.querySelector('#name');
+		let type = document.querySelector('#type');
 
-		function sendSignUpInfo(useremail, userpassword, username){
+		function sendSignUpInfo(useremail, userpassword, username, type){
 
             let xhttp = new XMLHttpRequest();
 
             xhttp.open("POST", "http://rest.learncode.academy/api/learncode/goodjobusers", true);
             xhttp.setRequestHeader("Content-Type","application/json");
-            let info = {"email":useremail, "password":userpassword, "name":username};
+            let info = {"email":useremail, "password":userpassword, "name":username, "type":type};
             let b = JSON.stringify(info);
             xhttp.send(b);
         }
 
         document.querySelector("#FinishSignup").onclick = function(){
         	event.preventDefault();
-        	sendSignUpInfo(useremail.value, userpassword.value, username.value);
+        	sendSignUpInfo(useremail.value, userpassword.value, username.value, type.value);
 
         	if ($('.pb-sb-form').valid() == true) {
         	this.disabled = true;

@@ -26,39 +26,80 @@
 	
 	<div class = "wrapper"> 
 
-		<header class = "header-authenticated">
+			<div id = "std">
 
-			<a href = "index.html"><img src = "assets/img/logo.png" class = "logo"></a>
+			<header class = "header-authenticated">
 
-			<form action = "searchresults.html"> 
-				<input name = "search" type = "search" placeholder = "Pesquise por solicitações, pessoas ou instituições" class = "h-a-f-searchinput">
-			</form>
+				<a href = "index.html"><img src = "assets/img/logo.png" class = "logo"></a>
+
+				<form action = "searchresults.html"> 
+					<input name = "search" type = "search" placeholder = "Pesquise por solicitações, pessoas ou instituições" class = "h-a-f-searchinput">
+				</form>
 
 
-			<div class = "h-a-icons">
-				<a href = "newsolicitation.html"><img src = "assets/img/icons/plus.png"></a>
-				<a href = "yourprojects.html"><img src = "assets/img/icons/todolist.png"></a>
-				<img src = "assets/img/icons/notification.png">
-			</div>
-
-			<div class = "h-a-usermenu">
-				<div class = "h-a-u-dropdown">
-
-					<div class = "h-a-u-username">
-						<a href = "#"><p id = "usern"></p></a>
-
-						<ul>
-							<li><a href = "#"> Visualizar Perfil</a></li>
-							<li><a href = "#"> Meus Projetos</a></li>
-							<li><a href = "config.html"> Configurações</a></li>
-							<li><a href = "profile.html"><p onclick = "logout()">Sair</p></a></li>
-						</ul>
-					</div>
+				<div class = "h-a-icons">
+					<a href = "yourprojects.html"><img src = "assets/img/icons/todolist.png"></a>
+					<img src = "assets/img/icons/notification.png">
 				</div>
 
-			</div>
+				<div class = "h-a-usermenu">
+					<div class = "h-a-u-dropdown">
 
-		</header>
+						<div class = "h-a-u-username">
+							<a href = "#"><p class = "usern"></p></a>
+
+							<ul>
+								<li><a href = "profile.html"> Visualizar Perfil</a></li>
+								<li><a href = "yourprojects.html"> Meus Projetos</a></li>
+								<li><a href = "config.html"> Configurações</a></li>
+								<li><a href = "#"><p onclick = "logout()">Sair</p></a></li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+
+			</header>
+
+		</div>
+
+		<div id = "ong">
+
+			<header class = "header-authenticated">
+
+				<a href = "index.html"><img src = "assets/img/logo.png" class = "logo"></a>
+
+				<form action = "searchresults.html"> 
+					<input name = "search" type = "search" placeholder = "Pesquise por solicitações, pessoas ou instituições" class = "h-a-f-searchinput">
+				</form>
+
+
+				<div class = "h-a-icons">
+					<a href = "newsolicitation.html"><img src = "assets/img/icons/plus.png"></a>
+					<a href = "yourprojects.html"><img src = "assets/img/icons/todolist.png"></a>
+					<img src = "assets/img/icons/notification.png">
+				</div>
+
+				<div class = "h-a-usermenu">
+					<div class = "h-a-u-dropdown">
+
+						<div class = "h-a-u-username">
+							<a href = "#"><p class = "usern"></p></a>
+
+							<ul>
+								<li><a href = "profile.html"> Visualizar Perfil</a></li>
+								<li><a href = "yourprojects.html"> Meus Projetos</a></li>
+								<li><a href = "config.html"> Configurações</a></li>
+								<li><a href = "#"><p onclick = "logout()">Sair</p></a></li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+
+			</header>
+
+		</div>
 
 		<section class = "primary-content"> 
 
@@ -160,6 +201,9 @@
 
 <script>
 
+	
+	document.querySelector('h1').innerHTML = localStorage.getItem('username');
+
 	if (localStorage.getItem('username') != null) {
 
 	} else {
@@ -169,12 +213,19 @@
 
 	}
 
-	document.querySelector('#usern').innerHTML = "Oi, " + localStorage.getItem('username');
+	if (localStorage.getItem('type') == 'student') {
 
-	document.querySelector('h1').innerHTML = localStorage.getItem('username');
+		$("#ong").hide();
+	} else {
+		$("#std").hide();
+
+	}
+
+	$('.usern').append("Oi, " + localStorage.getItem('username'));
 
 	function logout() {
 		localStorage.removeItem('username');
+		localStorage.removeItem('type');
 		window.location = "index.html";
 	}
 

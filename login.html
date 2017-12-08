@@ -97,9 +97,19 @@
 
 						if (userpassword.value == obj[i].password) {
 
+							                	console.log(obj[i].type);
+
 							localStorage.setItem('username', obj[i].name);
 
-							window.location = "explore.html"
+							if ('student' == obj[i].type) {
+
+								localStorage.setItem('type', 'student');
+
+								window.location = "explore.html"
+
+							}
+
+							window.location = "ps.html"
 
 						} else {				
 						}
